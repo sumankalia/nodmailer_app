@@ -9,8 +9,7 @@ app.use(express.json());
 
 app.use("/users", userRoutes);
 
-const MONGODB_URI =
-  "mongodb+srv://sumankalia:Z4uDqnnmiOvlkXVV@cluster0.vjmqg.mongodb.net/Cluster0?retryWrites=true&w=majority";
+const MONGODB_URI = keys.MONGODB_URI;
 
 mongoose
   .connect(MONGODB_URI)
